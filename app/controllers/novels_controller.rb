@@ -5,15 +5,11 @@ class NovelsController < ApplicationController
   # GET /novels.json
   def index
     @novels = Novel.all
-
-    #render json: @novels
   end
 
   # GET /novels/1
   # GET /novels/1.json
-  def show
-    render json: @novel
-  end
+  def show; end
 
   # POST /novels
   # POST /novels.json

@@ -5,15 +5,11 @@ class RatingsController < ApplicationController
   # GET /ratings.json
   def index
     @ratings = Rating.all
-
-    render json: @ratings
   end
 
   # GET /ratings/1
   # GET /ratings/1.json
-  def show
-    render json: @rating
-  end
+  def show; end
 
   # POST /ratings
   # POST /ratings.json

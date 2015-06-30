@@ -5,15 +5,11 @@ class AuthorsController < ApplicationController
   # GET /authors.json
   def index
     @authors = Author.all
-
-    render json: @authors
   end
 
   # GET /authors/1
   # GET /authors/1.json
-  def show
-    render json: @author
-  end
+  def show; end
 
   # POST /authors
   # POST /authors.json
