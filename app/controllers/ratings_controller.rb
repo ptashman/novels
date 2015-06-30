@@ -50,6 +50,6 @@ class RatingsController < ApplicationController
     end
 
     def rating_params
-      params[:rating]
+      params.require(:rating).permit(:stars, :novel_id, :user_id)
     end
 end

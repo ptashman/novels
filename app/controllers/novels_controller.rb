@@ -50,6 +50,6 @@ class NovelsController < ApplicationController
     end
 
     def novel_params
-      params[:novel]
+      params.require(:novel).permit(:title, :description, :author_id)
     end
 end
