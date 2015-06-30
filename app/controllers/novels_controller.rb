@@ -6,7 +6,7 @@ class NovelsController < ApplicationController
   def index
     @novels = Novel.all
 
-    render json: @novels
+    #render json: @novels
   end
 
   # GET /novels/1
