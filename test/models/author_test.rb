@@ -2,7 +2,7 @@ require 'test_helper'
 
 class AuthorTest < ActiveSupport::TestCase
   test "does not save without a name" do
-    @author_without_name = Author.new
+    @author_without_name = Author.new(name: nil)
     assert @author_without_name.save == false
   end
 
