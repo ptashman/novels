@@ -5,6 +5,8 @@ class NovelsController < ApplicationController
   # GET /novels.json
   def index
     @novels = Novel.all
+
+    render json: @novels, content_type: 'application/vnd.api+json'
   end
 
   # GET /novels/1

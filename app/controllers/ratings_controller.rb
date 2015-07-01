@@ -5,6 +5,8 @@ class RatingsController < ApplicationController
   # GET /ratings.json
   def index
     @ratings = Rating.all
+
+    render json: @ratings, content_type: 'application/vnd.api+json'
   end
 
   # GET /ratings/1
