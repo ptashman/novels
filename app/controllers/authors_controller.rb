@@ -5,8 +5,6 @@ class AuthorsController < ApplicationController
   # GET /authors.json
   def index
     @authors = Author.all
-
-    render json: @authors, content_type: 'application/vnd.api+json'
   end
 
   # GET /authors/1
